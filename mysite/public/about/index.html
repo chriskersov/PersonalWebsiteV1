@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Hugo XMin | A minimal Hugo website</title>
+    <title>About Me | A minimal Hugo website</title>
     <link rel="stylesheet" href="/css/style.css" /> <link
     rel="stylesheet" href="/css/fonts.css" />
     <link
@@ -63,13 +63,13 @@
 </html>
 
 <div class="article-meta">
-<h1><span class="title">About Hugo XMin</span></h1>
-<h2 class="author">Yihui Xie</h2>
+<h1><span class="title">About Me</span></h1>
+<h2 class="author">Chris Kersov</h2>
 
 </div>
 
 <main>
-<p><strong>XMin</strong> is the first Hugo theme I have designed. The original reason that I wrote it was I needed a minimal example of Hugo themes when I was writing the  <a href="https://github.com/rstudio/blogdown"><strong>blogdown</strong></a> book. Basically I wanted a simple theme that supports a navigation menu, a home page, other single pages, lists of pages, blog posts, categories, tags, and RSS. That is all. Nothing fancy. In terms of CSS and JavaScript, I really want to keep them minimal. In fact, this theme does not contain any JavaScript code at all, although on this example website I did introduce some JavaScript code (still relatively simple anyway). The theme does not contain any images, either, and is pretty much a plain-text theme.</p>
+<p><strong>XMin</strong> is the first Hugo theme I have designed. The original reason that I wrote it was I needed a minimal example of Hugo themes when I was writing the <a href="https://github.com/rstudio/blogdown"><strong>blogdown</strong></a> book. Basically I wanted a simple theme that supports a navigation menu, a home page, other single pages, lists of pages, blog posts, categories, tags, and RSS. That is all. Nothing fancy. In terms of CSS and JavaScript, I really want to keep them minimal. In fact, this theme does not contain any JavaScript code at all, although on this example website I did introduce some JavaScript code (still relatively simple anyway). The theme does not contain any images, either, and is pretty much a plain-text theme.</p>
 <p>The theme name &ldquo;XMin&rdquo; can be interpreted as &ldquo;<strong>X</strong>ie&rsquo;s <strong>Min</strong>imal theme&rdquo; (Xie is my last name) or &ldquo;e<strong>X</strong>tremely <strong>Min</strong>imal theme&rdquo;.</p>
 <h2 id="hugoyaml-the-config-file"><code>hugo.yaml</code> (the config file)</h2>
 <p>For this example site, I defined permalinks for two sections, <code>post</code> and <code>note</code>, so that the links to pages under these directories will contain the date info, e.g., <code>https://xmin.yihui.org/post/2016/02/14/a-plain-markdown-post/</code>. This is optional, and it is up to your personal taste of URLs.</p>
@@ -103,10 +103,16 @@
 <p>Here <code>{Year}</code> means the year in which the site is built (usually the current year).</p>
 <h2 id="custom-layouts">Custom layouts</h2>
 <p>There are two layout files under <code>layouts/_partials/</code> that you may want to override: <code>head_custom.html</code> and <code>foot_custom.html</code>. This is how you inject arbitrary HTML code to the head and foot areas. For example, this site has a file <code>layouts/_partials/foot_custom.html</code> to support LaTeX math via KaTeX and center images automatically:</p>
-<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/npm/katex/dist/katex.min.css&quot;&gt;
-&lt;script src=&quot;//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js&quot; defer&gt;&lt;/script&gt;
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/npm/katex/dist/katex.min.css&quot; /&gt;
+&lt;script
+  src=&quot;//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js&quot;
+  defer
+&gt;&lt;/script&gt;
 
-&lt;script src=&quot;//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js&quot; defer&gt;&lt;/script&gt;
+&lt;script
+  src=&quot;//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js&quot;
+  defer
+&gt;&lt;/script&gt;
 </code></pre>
 <p>You can certainly enable highlight.js for syntax highlighting by yourself through <code>head_custom.html</code> and <code>foot_custom.html</code> if you want.</p>
 <p>If you do not like the default fonts (e.g., <code>Palatino</code>), you may provide your own <code>static/css/fonts.css</code> under the root directory of your website to override the <code>fonts.css</code> in the theme.</p>
