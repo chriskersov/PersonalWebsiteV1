@@ -1,0 +1,53 @@
+<!-- <style>
+/* Rainbow-on-hover text color (only the text changes) -- smoother, blurrier, clean loop + subtle glow */
+.ck-rainbow-hover {
+  color: #000;                                  /* default text colour */
+  display: inline-block;
+  transition: color 240ms ease, filter 240ms ease, text-shadow 240ms ease;
+  -webkit-text-fill-color: initial;
+  filter: blur(0);
+  text-shadow: none;
+  will-change: filter, text-shadow;
+}
+.ck-rainbow-hover:hover,
+.ck-rainbow-hover:focus-visible {
+  color: transparent;
+  /* background-image: linear-gradient(90deg,
+    #ff004d, #ff7a00, #ffd300, #00c853, #00b0ff, #6200ea, #ff004d); */
+  background-image: linear-gradient(90deg,
+    #00b0ff, #2566fdff, #9143ffff, #7b00ffff, #9143ffff, #2566fdff, #00b0ff);
+  background-size: 200% 100%;                    /* doubled so the animation loops cleanly */
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: ck-rainbow-move 3.5s linear infinite; /* linear for a perfectly even loop */
+  /* layered text-shadow for glow (multiple colored halos) */
+  text-shadow:
+    0 0 6px rgba(255,255,255,0.35),
+    0 0 10px rgba(255,0,77,0.15),
+    0 0 18px rgba(255,122,0,0.10),
+    0 0 28px rgba(0,176,255,0.08),
+    0 0 40px rgba(98,0,234,0.06);
+  /* subtle outer blur to make glow feel smoother */
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.06));
+  will-change: background-position, text-shadow, filter;
+}
+/* Keyframes move the background across 0% -> 200% so the repeating gradient wraps without a jump */
+@keyframes ck-rainbow-move {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 200% 50%; }
+}
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .ck-rainbow-hover:hover,
+  .ck-rainbow-hover:focus-visible {
+    animation: none;
+    background-size: 100% 100%;
+    /* keep a subtle, non-distracting glow for reduced-motion users */
+    text-shadow: 0 0 6px rgba(0,0,0,0.06);
+    filter: none;
+  }
+}
+</style> -->

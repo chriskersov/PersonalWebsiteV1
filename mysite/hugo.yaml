@@ -1,6 +1,6 @@
-baseurl: "https://example.org/"  # please update this to your actual URL
+baseurl: "https://example.org/" # please update this to your actual URL
 languageCode: "en-us"
-title: "A minimal Hugo website"
+title: "Chris Kersov"
 theme: "hugo-xmin"
 googleAnalytics: ""
 disqusShortname: ""
@@ -19,18 +19,24 @@ menu:
     - name: About
       url: "about/"
       weight: 2
-    - name: Categories
+    - name: Education
       url: "categories/"
       weight: 3
-    - name: Tags
-      url: "tags/"
+    - name: Experience
+      url: "categories/"
       weight: 4
-    - name: Subscribe
-      url: "index.xml"
+    - name: Projects
+      url: "tags/"
+      weight: 5
+    - name: Contact
+      url: "tags/"
+      weight: 6
+    # - name: Subscribe
+    #   url: "index.xml"
 
 params:
   description: "A website built through Hugo and blogdown."
-  footer: "&copy; [Yihui Xie](https://yihui.org) 2017 -- {Year} | [Github](https://github.com/yihui) | [BlueSky](https://bsky.app/profile/yihui.org)"
+  footer: "[Github](https://github.com/chriskersov) | [LinkedIn](https://www.linkedin.com/in/chriskersov/)"
 
 markup:
   highlight:
@@ -43,10 +49,10 @@ markup:
         enable: true
         delimiters:
           block:
-          - - \[
-            - \]
-          - - $$
-            - $$
+            - - \[
+              - \]
+            - - $$
+              - $$
           inline:
-          - - \(
-            - \)
+            - - \(
+              - \)
