@@ -15,30 +15,169 @@ I am currently studying Computer Science and Artificial Intelligence at the Univ
 
 ## University of Bath
 
-### BSc(Hons) Computer Science and Artificial Intelligence
+### BSc(Hons) Computer Science and Artificial Intelligence - _First (72.42%)_
+
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
 **Year 3 - Placement Year**
 
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
+
 On placement year at Shell in central London. I am a data scientist working within the E-Mobility team.
+
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
 **Year 2 - 72.42%**
 
 <!-- &ensp; &ensp; -->
 <!-- this is how to do tabs -->
 
-CM22007 Software Engineering
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
-CM22008 Algorithms and Complexity
+<a href="https://www.bath.ac.uk/catalogues/2024-2025/cm/CM22007.html" target="_blank" style="color:#00478f; text-decoration:underline;">CM22007 Software Engineering
+</a>
 
-CM22009 Machine Learning
+<!-- synopsis -->
 
-CM22010 Visual Computing
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
 
-CM22011 Human-Computer Interaction 1
+<!-- content -->
 
-CM22015 Artificial Intelligence 2
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
 
-CM22016 Foundations and Frontiers of Machine Learning
+<!-- assessment summary -->
+
+- <span style="text-decoration: underline;">Assessment summary:</span>
+
+<!-- my thoughts -->
+
+> <span style="text-decoration: underline;">My thoughts:</span>
+
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
+
+<a href="https://www.bath.ac.uk/catalogues/2024-2025/cm/CM22008.html" target="_blank" style="color:#00478f; text-decoration:underline;">CM22008 Algorithms and Complexity
+</a>
+
+<!-- synopsis -->
+
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+
+<!-- content -->
+
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+
+<!-- assessment summary -->
+
+- <span style="text-decoration: underline;">Assessment summary:</span>
+
+<!-- my thoughts -->
+
+> <span style="text-decoration: underline;">My thoughts:</span>
+
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
+
+<a href="https://www.bath.ac.uk/catalogues/2024-2025/cm/CM22009.html" target="_blank" style="color:#00478f; text-decoration:underline;">CM22009 Machine Learning
+</a>
+
+<!-- synopsis -->
+
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+
+<!-- content -->
+
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+
+<!-- assessment summary -->
+
+- <span style="text-decoration: underline;">Assessment summary:</span>
+
+<!-- my thoughts -->
+
+> <span style="text-decoration: underline;">My thoughts:</span>
+
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
+
+<a href="https://www.bath.ac.uk/catalogues/2024-2025/cm/CM22010.html" target="_blank" style="color:#00478f; text-decoration:underline;">CM22010 Visual Computing
+</a>
+
+<!-- synopsis -->
+
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+
+<!-- content -->
+
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+
+<!-- assessment summary -->
+
+- <span style="text-decoration: underline;">Assessment summary:</span>
+
+<!-- my thoughts -->
+
+> <span style="text-decoration: underline;">My thoughts:</span>
+
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
+
+<a href="https://www.bath.ac.uk/catalogues/2024-2025/cm/CM22011.html" target="_blank" style="color:#00478f; text-decoration:underline;">CM22011 Human-Computer Interaction 1
+</a>
+
+<!-- synopsis -->
+
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+
+<!-- content -->
+
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+
+<!-- assessment summary -->
+
+- <span style="text-decoration: underline;">Assessment summary:</span>
+
+<!-- my thoughts -->
+
+> <span style="text-decoration: underline;">My thoughts:</span>
+
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
+
+<a href="https://www.bath.ac.uk/catalogues/2024-2025/cm/CM22015.html" target="_blank" style="color:#00478f; text-decoration:underline;">CM22015 Artificial Intelligence 2
+</a>
+
+<!-- synopsis -->
+
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+
+<!-- content -->
+
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+
+<!-- assessment summary -->
+
+- <span style="text-decoration: underline;">Assessment summary:</span>
+
+<!-- my thoughts -->
+
+> <span style="text-decoration: underline;">My thoughts:</span>
+
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
+
+<a href="https://www.bath.ac.uk/catalogues/2024-2025/cm/CM22016.html" target="_blank" style="color:#00478f; text-decoration:underline;">CM22016 Foundations and Frontiers of Machine Learning
+</a>
+
+<!-- synopsis -->
+
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+
+<!-- content -->
+
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+
+<!-- assessment summary -->
+
+- <span style="text-decoration: underline;">Assessment summary:</span>
+
+<!-- my thoughts -->
+
+> <span style="text-decoration: underline;">My thoughts:</span>
 
 <hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
@@ -132,19 +271,19 @@ CM22016 Foundations and Frontiers of Machine Learning
 
 <!-- synopsis -->
 
-- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">"Building on Programming 1, you will learn about the concept of, and write programs in, the object-oriented programming style. You will also learn about and implement advanced programming techniques. Working in a team, you will plan, organise, and implement programs using a modern software engineering paradigm. You will learn about basic data structures and algorithms and implement server-client interaction."</span>
 
 <!-- content -->
 
-- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">"Example topics include: introduction to a large-scale object-oriented programming language such as Java, introduction to data structures and algorithms, event handling and error handling, basic multi-threading and networking, basic software engineering, incremental development and Agile."</span>
 
 <!-- assessment summary -->
 
-- <span style="text-decoration: underline;">Assessment summary:</span>
+- <span style="text-decoration: underline;">Assessment summary:</span> 100% Coursework
 
 <!-- my thoughts -->
 
-> <span style="text-decoration: underline;">My thoughts:</span>
+> <span style="text-decoration: underline;">My thoughts:</span> The first coursework was in Java, which I had not used before; it focused on object‑oriented programming principles. Having prior OOP experience from A‑Level Computer Science and Python made it interesting to apply those concepts in a different language. For me, the hightlight of this module was the second coursework: a nine‑person group project. We completed three Agile sprints to develop a website to help students track study sessions recording duration, location, productivity, mood, and tasks. The site also presented statistics to help users visualise study patterns and progress, and offered insights to improve productivity and mood. I took a leadership role in this project and it was a good experience as my first large group project.
 
 <hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
@@ -153,19 +292,19 @@ CM22016 Foundations and Frontiers of Machine Learning
 
 <!-- synopsis -->
 
-- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">"You will explore fundamental aspects of analysis and computer algebra, and use appropriate software tools to perform calculations in linear algebra and calculus. You will be introduced to cryptography and its mathematical basis in number theory."</span>
 
 <!-- content -->
 
-- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">"Example topics include: Linear Algebra: matrices and vectors, Gaussian elimination, inverses, determinants, eigenvalues and eigenvectors, equations of linear objects in vector spaces. Series, Taylor/Maclaurin series. Elementary number theory. Mathematical foundations of cryptography. Public key cryptography."</span>
 
 <!-- assessment summary -->
 
-- <span style="text-decoration: underline;">Assessment summary:</span>
+- <span style="text-decoration: underline;">Assessment summary:</span> Coursework 25%, Exam 75%
 
 <!-- my thoughts -->
 
-> <span style="text-decoration: underline;">My thoughts:</span>
+> <span style="text-decoration: underline;">My thoughts:</span> This was the second mathematics module of the year and followed the same structure. I enjoyed the linear algebra topics most — they are fundamental to computing and particularly interesting to me. We also covered some cryptography. I had already studied similar linear algebra in Further Mathematics at A‑Level, which allowed me to build on that prior knowledge.
 
 <hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
@@ -173,10 +312,18 @@ CM22016 Foundations and Frontiers of Machine Learning
 
 ## St Dominic's Sixth Form College
 
-### A-Levels
+### A-Levels - _A\*AA_
+
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
 **Computer Science - A\***
 
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
+
 **Mathematics - A**
 
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
+
 **Further Mathematics - A**
+
+<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
