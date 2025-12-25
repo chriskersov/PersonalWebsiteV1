@@ -23,7 +23,7 @@ I am currently studying Computer Science and Artificial Intelligence at the Univ
 
 <hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
-On placement year at Shell in central London. I am a data scientist working within the E-Mobility team.
+- On placement year at Shell in central London. I am a data scientist working within the E-Mobility team.
 
 <hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
@@ -34,24 +34,27 @@ On placement year at Shell in central London. I am a data scientist working with
 
 <hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
-<a href="https://www.bath.ac.uk/catalogues/2024-2025/cm/CM22007.html" target="_blank" style="color:#00478f; text-decoration:underline;">CM22007 Software Engineering
-</a>
+<!-- <div style="padding:1.25rem; margin:1.25rem 0; box-shadow:0 8px 30px rgba(0, 0, 0, 0.2); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border:1px solid rgba(0, 0, 0, 0.3);"> -->
+
+<a href="https://www.bath.ac.uk/catalogues/2024-2025/cm/CM22007.html" target="_blank" style="color:#00478f; text-decoration:underline;">CM22007 Software Engineering</a>
 
 <!-- synopsis -->
 
-- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">"You will work in a team to propose, design, develop, and evaluate a software system, using a modern software process such as agile. You will learn how to gather requirements, specify software, develop models in preparation for writing code, as well as test and evaluate software. You will consider risk management, cyber-security, and other ethical aspects, as well as report on the process and the resulting software."</span>
 
 <!-- content -->
 
-- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">"Examples of topics include: Quality assurance and software testing. Documentation. Tool support for the systems design and development process. Software project management and team approaches to software development. Ethical issues and codes of conduct in professional computing. Security as a system-wide consideration. Risk management. Recognised standards in science and engineering, including team responsibilities, data ownership, research with human participants and public deployment of interactive systems."</span>
 
 <!-- assessment summary -->
 
-- <span style="text-decoration: underline;">Assessment summary:</span>
+- <span style="text-decoration: underline;">Assessment summary:</span> Coursework 100%
 
 <!-- my thoughts -->
 
-> <span style="text-decoration: underline;">My thoughts:</span>
+> <span style="text-decoration: underline;">My thoughts:</span> This year-long module was completed by an eight-person team and split into multiple deliverables. It involved substantial documentation and report writing for each deliverable, plus a final presentation to tutors. Our project was an all-in-one event-planning web app featuring a shared calendar, travel and accommodation planning, and a friends system. We used GitHub for version control, SQLite (accessed via Python) for the database, Flask for the backend, and HTML, Tailwind CSS, and vanilla JavaScript for the frontend. I designed the UI and implemented the frontend (the calendar page required extensive JavaScript), and we conducted unit testing during every sprint. We delivered a fully functional product, performed strongly on each deliverable, and gave a successful final presentation. I also took a leadership role and consistently contributed significantly to the team’s work.
+
+</div>
 
 <hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
@@ -60,61 +63,57 @@ On placement year at Shell in central London. I am a data scientist working with
 
 <!-- synopsis -->
 
-- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">"You will explore fundamental models of computation such as finite automata and Turing machines, design algorithms within a given model, and formally prove that a problem cannot be addressed within a given model. You will learn about a variety of data structures and choose an appropriate one for a given problem. You will determine the computational complexity of algorithms and demonstrate their correctness."</span>
 
 <!-- content -->
 
-- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">"Regular languages; deterministic and non-deterministic finite automata; existence of non-regular languages via the Pumping Lemma. Context-free languages; pushdown automata; context-free grammars; parsing in context-free languages; existence of non-context-free languages via the Pumping Lemma. Turing machines; Church-Turing Thesis; Universal Turing machine and undecidability of the halting problem. Non-deterministic Turing machines; complexity classes P and NP; P vs NP problem. Data structures such as lists, stacks, queues, trees, hash tables, heaps, graphs, and self-balancing trees. Methods of designing efficient algorithms such as divide-and-conquer, recursion, dynamic programming, and greedy algorithms. Complexity; best, worst and average cases; time, space and other measures; big Ο, big Θ, and big Ω notation. Analysis of algorithms such as sorting algorithms, graph algorithms, and algorithms for linear algebra. Basic correctness techniques including loop invariants. Algorithms and data structures in practice; crossover points between algorithms; polyalgorithms; computationally hard problems in everyday life."</span>
 
 <!-- assessment summary -->
 
-- <span style="text-decoration: underline;">Assessment summary:</span>
+- <span style="text-decoration: underline;">Assessment summary:</span> Coursework 25%, Exam 75%
 
 <!-- my thoughts -->
 
-> <span style="text-decoration: underline;">My thoughts:</span>
-
-<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
+> <span style="text-decoration: underline;">My thoughts:</span> This was an interesting module. Although it was not a programming module, it examined the theory and explanations behind data structures and algorithms. The material was presented logically, with each topic building on the previous one, and I enjoyed reconstructing familiar data structures and algorithms from first principles to gain a deeper understanding. I also enjoyed learning about regular languages, context-free languages, and Turing machines, and I particularly appreciated Guy McCusker’s teaching.
 
 <a href="https://www.bath.ac.uk/catalogues/2024-2025/cm/CM22009.html" target="_blank" style="color:#00478f; text-decoration:underline;">CM22009 Machine Learning
 </a>
 
 <!-- synopsis -->
 
-- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">"You will explore a wide range of fundamental techniques in machine learning, and learn about their strengths and limitations. You will write code and use software libraries to apply these techniques to solve problems in machine learning."</span>
 
 <!-- content -->
 
-- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">"Topics covered by this unit will typically include central concepts and algorithms of supervised, unsupervised, and reinforcement learning such as support vector machines, deep neural networks, regularisation, ensemble methods, random forest, Markov Decision Processes, Q-learning, clustering, and dimensionality reduction."</span>
 
 <!-- assessment summary -->
 
-- <span style="text-decoration: underline;">Assessment summary:</span>
+- <span style="text-decoration: underline;">Assessment summary:</span> Coursework 30%, Exam 70%
 
 <!-- my thoughts -->
 
-> <span style="text-decoration: underline;">My thoughts:</span>
-
-<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
+> <span style="text-decoration: underline;">My thoughts:</span> This was one of my favourite modules at university so far. I enjoyed the content, which covered supervised, unsupervised, and reinforcement learning, with the primary emphasis on supervised and unsupervised methods. The topics were engaging and supported by the necessary mathematics, with clear explanations throughout. The first coursework involved using machine learning to predict a topic label; a major focus was evaluating the model and dataset, understanding the model's behaviour, explaining the results, and improving accuracy. The second coursework required building a convolutional autoencoder to compress and reconstruct images and writing a report on methodology and results, which I found enjoyable. I performed very well on this coursework and achieved my highest exam score to date; I am proud of my performance in this module.
 
 <a href="https://www.bath.ac.uk/catalogues/2024-2025/cm/CM22010.html" target="_blank" style="color:#00478f; text-decoration:underline;">CM22010 Visual Computing
 </a>
 
 <!-- synopsis -->
 
-- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">"You will explore fundamental mathematical and computational techniques for processing and generating digital images from models of 2D and 3D objects and scenes. You will learn how to manipulate and animate these models, implement low-level operations and basic machine learning systems for computer vision, and generate realistic images and interactive visualisations."</span>
 
 <!-- content -->
 
-- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">"Basics: images; colour spaces; imaging and display devices; video. Image formation: camera models, projections; calibration (concepts, not detail). Image processing: image filtering; convolutions; warping; Fourier transform. Modelling: 2D/3D transformations and projections; lines, curves and surfaces; meshes and textures. Low-level computer vision: edge detection; corners. Mid-level computer vision: tracking; optical flow; stereo; geometry. Rendering: ray tracing (physics of image formation); visibility; lighting and shading; rasterisation. Animation/Interaction: basics of animation; interactive graphics/visualisation. Panorama stitching: features; descriptors; matching; alignment; blending. Deep Learning: convolutional neural networks (CNNs)." </span>
 
 <!-- assessment summary -->
 
-- <span style="text-decoration: underline;">Assessment summary:</span>
+- <span style="text-decoration: underline;">Assessment summary:</span>Coursework 50%, Exam 50%
 
 <!-- my thoughts -->
 
-> <span style="text-decoration: underline;">My thoughts:</span>
+> <span style="text-decoration: underline;">My thoughts:</span> The Visual Computing module included two coursework assignments, one in each semester. Both were group projects and directly applied lecture material through programming. In the first coursework we implemented visual computing techniques ourselves using Python. In the second coursework we used graphics libraries and 3D models, manipulating them with JavaScript and displaying the output in a browser. The exam was challenging, so I am grateful I performed well.
 
 <hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
@@ -123,19 +122,19 @@ On placement year at Shell in central London. I am a data scientist working with
 
 <!-- synopsis -->
 
-- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">"Working in a team, you will apply interaction design and user experience design methods to develop a demonstrable prototype of an interactive system. You will consider principles of user interfaces, user experience, and user testing, including its ethical implications."</span>
 
 <!-- content -->
 
-- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">"Content will cover a range of topics in human-computer interaction and user experience. Examples of topics include: General foundations of Human-Computer Interaction. Design Methods (e.g. models of interaction, prototyping techniques, principles of user interface (UI) and user experience (UX) design, designing for accessibility). Introduction to evaluation, including ethical considerations for user testing."</span>
 
 <!-- assessment summary -->
 
-- <span style="text-decoration: underline;">Assessment summary:</span>
+- <span style="text-decoration: underline;">Assessment summary:</span> 100% Coursework
 
 <!-- my thoughts -->
 
-> <span style="text-decoration: underline;">My thoughts:</span>
+> <span style="text-decoration: underline;">My thoughts:</span> I enjoyed ths introduction to Human–Computer Interaction. The coursework involved designing a VR/AR game aimed at older adults, considering all design aspects and user interactions and explaining why our idea would work well in VR/AR. I created all my designs in Figma, which I had used the previous year to design the UI for the CM12005 Programming 2 coursework. From those designs I created and animated a demo video using CapCut. I put a lot of effort into the video and enjoyed the process, as I like design.
 
 <hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
@@ -144,19 +143,19 @@ On placement year at Shell in central London. I am a data scientist working with
 
 <!-- synopsis -->
 
-- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">"You will engage with artificial intelligence as a tool to approach computationally hard problems in a practical manner, applying fundamental concepts of artificial intelligence in practice."</span>
 
 <!-- content -->
 
-- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">"Topics covered by this unit will typically include: probabilistic reasoning, graphical models, sequential decision making under uncertainty, reinforcement learning, logical representation and reasoning (e.g. first-order logic), logic programming, constraint satisfaction, and planning, generative adversarial Networks (GANs), Visualizing CNN, attention models, transformer and AI planning"</span>
 
 <!-- assessment summary -->
 
-- <span style="text-decoration: underline;">Assessment summary:</span>
+- <span style="text-decoration: underline;">Assessment summary:</span> Coursework 30%, Exam 70%
 
 <!-- my thoughts -->
 
-> <span style="text-decoration: underline;">My thoughts:</span>
+> <span style="text-decoration: underline;">My thoughts:</span> This module was fascinating and I enjoyed all the topics we explored. The coursework focused on generative adversarial networks and their variants; I found GANs particularly interesting and appreciated having a dedicated assignment to study them in depth. I also enjoyed revising for the exam over the winter break and was happy with my performance. CM12001 Artificial Intelligence 1 was my favourite module in first year, and I think this module was a great continuation.
 
 <hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
@@ -165,21 +164,19 @@ On placement year at Shell in central London. I am a data scientist working with
 
 <!-- synopsis -->
 
-- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Synopsis:</span> <span style="font-style: italic;">"You will explore the foundational theory and practice of machine learning. You will practise the mathematical, statistical, and computational skills used in modern machine learning methods, appraise the suitability of various methods for a given application, and consider state-of-the-art developments."</span>
 
 <!-- content -->
 
-- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">""</span>
+- <span style="text-decoration: underline;">Content:</span> <span style="font-style: italic;">"Topics covered by this unit will typically include: theory of machine learning, optimisation, designing custom machine learning algorithms, state-of-the-art applications of machine learning, and current research in machine learning."</span>
 
 <!-- assessment summary -->
 
-- <span style="text-decoration: underline;">Assessment summary:</span>
+- <span style="text-decoration: underline;">Assessment summary:</span> Coursework 50%, Exam 50%
 
 <!-- my thoughts -->
 
-> <span style="text-decoration: underline;">My thoughts:</span>
-
-<hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
+> <span style="text-decoration: underline;">My thoughts:</span> This was a challenging module with a large amount of detailed material. The foundations component covered theoretical machine learning topics that I found compelling, and the tutorials allowed us to implement what we learned in code. The frontiers component focused on conducting research in the rapidly evolving field of machine learning and involved weekly reading groups where we analysed and presented research papers; my favourite paper to present was the AlphaGo paper. The coursework was a research proposal, which I enjoyed. The exam was very hard due to the breadth of content and emphasised applying knowledge to novel problems.
 
 **Year 1 - 75.50%**
 
@@ -304,7 +301,7 @@ On placement year at Shell in central London. I am a data scientist working with
 
 <!-- my thoughts -->
 
-> <span style="text-decoration: underline;">My thoughts:</span> This was the second mathematics module of the year and followed the same structure. I enjoyed the linear algebra topics most — they are fundamental to computing and particularly interesting to me. We also covered some cryptography. I had already studied similar linear algebra in Further Mathematics at A‑Level, which allowed me to build on that prior knowledge.
+> <span style="text-decoration: underline;">My thoughts:</span> This was the second mathematics module of the year and followed the same structure. I enjoyed the linear algebra topics most - they are fundamental to computing and particularly interesting to me. We also covered some cryptography. I had already studied similar linear algebra in Further Mathematics at A‑Level, which allowed me to build on that prior knowledge.
 
 <hr style="border-style: dashed; color: rgba(0,0,0,0.25)"/>
 
