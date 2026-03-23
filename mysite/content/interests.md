@@ -9,6 +9,10 @@ title: Interests
 
 <br>
 
+- look into how best to market projects to get users. like for the 3ds one for example.
+
+- a project that takes your current chat lets say you reached your limit then converts it to some format. then you take that to a new free ai tier then upload it there and boom its caught up and dont need to worry about the context window. what format to convert it to and how i am not sure. binary, tokens, idk. also how can you export a whole chat. im sure thats possible. but yeah this should be a useable tool maybe even a chrome extension or something.
+
 - just had an idea to evolve the ML grand slam predictor further
 - i want to have live match prediction kinda like google and football
 - use this video to learn how to do this ml stuff by looking a match:
