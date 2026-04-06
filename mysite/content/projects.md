@@ -18,7 +18,12 @@ This page showcases the personal projects I've built in my spare time. I always 
 
 ### <a href="https://3ds-wobble-gif.streamlit.app" target="_blank" style="color:black; text-decoration:underline;">Link</a>&nbsp;-----&nbsp;<a href="https://github.com/chriskersov/3DS-wobble-gif" target="_blank" style="color:black; text-decoration:underline;">GitHub</a>
 
-Streamlit, Pillow, NumPy, Streamlit Community Clouds
+<div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:1rem;">
+  <span style="border:2px solid #ccc; padding:0.1rem 0.5rem; color: #888;">Streamlit</span>
+  <span style="border:2px solid #ccc; padding:0.1rem 0.5rem; color: #888;">Pillow</span>
+  <span style="border:2px solid #ccc; padding:0.1rem 0.5rem; color: #888;">NumPy</span>
+  <span style="border:2px solid #ccc; padding:0.1rem 0.5rem; color: #888;">Streamlit Community Cloud</span>
+</div>
 
 <div style="display:grid; grid-template-columns:0.6fr 0.4fr; gap:3rem; align-items:start; margin-bottom:1.75rem;">
 
