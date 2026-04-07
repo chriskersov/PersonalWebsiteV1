@@ -122,6 +122,13 @@ function lightboxPrev() { lightboxIndex = (lightboxIndex - 1 + slides.length) % 
 document.getElementById("lightbox").addEventListener("click", function(e) {
   if (e.target === this) closeLightbox();
 });
+
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") {
+    closeLightbox();
+    closeLightbox2();
+  }
+});
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
