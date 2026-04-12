@@ -11,6 +11,8 @@ title: Interests
 
 ideas for future projects
 
+- UK weather analysis
+
 - create an npm package that converts mpo file to two jpegs
 
 - aus open predictor
