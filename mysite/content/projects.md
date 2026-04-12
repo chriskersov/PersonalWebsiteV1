@@ -17,8 +17,9 @@ This page showcases the personal projects I've built in my spare time. I always 
       <li><a href="#personal-finances-ai" style="color: black; text-decoration: none;">Personal Finances AI</a></li>
     </ul>
   </div>
-  <div style="border: 2px solid #ccc; padding: 1rem 1.25rem;">
-    <div id="contrib-graph"></div>
+
+  <div style="display:flex; justify-content:center; align-items:center;">
+    <div id="contrib-graph" style="width:100%; max-width:100%; border: 2px solid #ccc; padding: 1rem; box-sizing: border-box;"></div>
   </div>
 </div>
 
@@ -63,10 +64,23 @@ function getColor(count) {
   return "#111111";
 }
 
+function getColor(count) {
+  if (count === 0) return "#ebedf0"; // GitHub empty cell
+  if (count <= 2)  return "#9be9a8"; // GitHub Light Green
+  if (count <= 5)  return "#40c463"; // GitHub Medium Green
+  if (count <= 9)  return "#30a14e"; // GitHub Dark Green
+  return "#216e39";                // GitHub Deepest Green
+}
+
 async function renderGraph() {
-  const weeks = await fetchContributions();
+  const allWeeks = await fetchContributions();
+  const weeks = allWeeks.slice(-13);
 
   const container = document.getElementById("contrib-graph");
+  
+  // FIX: Clear the container before appending the new graph
+  container.innerHTML = ""; 
+
   const cellSize = 10;
   const gap = 2;
   const cols = weeks.length;
@@ -76,7 +90,7 @@ async function renderGraph() {
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("viewBox", `0 0 ${totalW} ${totalH}`);
-  svg.setAttribute("width", "100%");
+  svg.setAttribute("width", "100%"); 
   svg.style.display = "block";
 
   weeks.forEach((week, col) => {
@@ -88,6 +102,7 @@ async function renderGraph() {
       rect.setAttribute("height", cellSize);
       rect.setAttribute("rx", 2);
       rect.setAttribute("fill", getColor(d.contributionCount));
+      
       const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
       title.textContent = `${d.date}: ${d.contributionCount} contribution${d.contributionCount !== 1 ? "s" : ""}`;
       rect.appendChild(title);
@@ -97,6 +112,8 @@ async function renderGraph() {
 
   container.appendChild(svg);
 }
+
+renderGraph();  
 
 renderGraph();
 </script>
