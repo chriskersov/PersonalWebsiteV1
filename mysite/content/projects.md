@@ -10,104 +10,43 @@ This page showcases the personal projects I've built in my spare time. I always 
 
 <br>
  
-<div style="display:grid; grid-template-columns:0.6fr 0.4fr; gap:3rem; align-items:start;">
-<div style="display:flex; flex-direction:column; gap:1rem;">
-    <table style="width:100%; border: 2px solid #ccc; border-collapse: collapse; table-layout: fixed; box-sizing: border-box;">
-        <tr>
-            <td style="border: 1px solid #ccc; padding: 0.5rem 0.75rem; background: #f4f4f4; text-align: center;">
-                <strong>Contents</strong>
-            </td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid #ccc; padding: 1rem 1.25rem; vertical-align: top; background: white;">
-                <ul style="margin: 0; padding-left: 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1rem;">
-                  <li><a href="#3ds-mpo-wobble-tool" style="color: orange; text-decoration: none;">3DS MPO Wobble Tool</a></li>
-                  <li><a href="#" style="color: red; text-decoration: none;">LLM Memory Mover</a></li>
-                  <li><a href="#" style="color: red; text-decoration: none;">MPO Parser NPM Package</a></li>
-                  <li><a href="#" style="color: red; text-decoration: none;">Australian Open Predictor</a></li>
-                  <li><a href="#personal-finances-ai" style="color: orange; text-decoration: none;">Personal Finances AI</a></li>    
-                  <li><a href="#" style="color: red; text-decoration: none;">Roland Garros Predictor</a></li>    
-                  <li><a href="#" style="color: red; text-decoration: none;">Something Else</a></li>    
-                  <li><a href="#" style="color: red; text-decoration: none;">Something Else</a></li>    
-                  <li><a href="#" style="color: red; text-decoration: none;">Something Else</a></li>    
-                  <li><a href="#" style="color: red; text-decoration: none;">Something Else</a></li>    
-                  <li><a href="#" style="color: red; text-decoration: none;">Something Else</a></li>    
-                  <li><a href="#" style="color: red; text-decoration: none;">Something Else</a></li>    
-                  <li><a href="#" style="color: red; text-decoration: none;">Something Else</a></li>    
-                </ul>
-            </td>
-        </tr>
-    </table>
-
-  <table style="width:100%; border: 2px solid #ccc; border-collapse: collapse; table-layout: fixed; box-sizing: border-box;">
-    <tr>
-        <td style="border: 1px solid #ccc; padding: 0.8rem 1.25rem; background: white;">
-            <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-              <span><span style="color: red;">●</span> Not Started</span>
-              <span><span style="color: orange;">●</span> In Progress</span>
-              <span><span style="color:#40c463;">●</span> Completed</span>
-            </div>
-        </td>
-    </tr>
-  </table>
-
-  </div>
-
-  <div style="display:flex; flex-direction:column; justify-content: flex-start;"> <table style="width:100%; border: 2px solid #ccc; border-collapse: collapse; table-layout: fixed; box-sizing: border-box;">
-        <tr>
-            <td style="border: 1px solid #ccc; padding: 0.5rem 0.75rem; background: #f4f4f4; text-align: center;">
-                <strong>Github Contribution Graph</strong>
-            </td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid #ccc; padding: 1rem; vertical-align: top; text-align: center; background: white;">
-                <div id="contrib-graph" style="width:100%;"></div>
-            </td>
-        </tr>
-    </table>
-  </div>
+<div style="display:grid; grid-template-columns:0.5fr 0.5fr; gap:3rem; align-items:start;">
+    <div style="display:flex; flex-direction:column; gap:1rem;">
+        <table style="width:100%; border: 2px solid #ccc; border-collapse: collapse; table-layout: fixed; box-sizing: border-box;">
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 0.5rem 0.75rem; background: #f4f4f4; text-align: center;">
+                    <strong>Contents</strong>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 1rem 1.25rem; vertical-align: top; background: white;">
+                  <ul style="margin: 0; padding-left: 0; list-style: none; text-align: center;">
+                    <li><a href="#3ds-mpo-wobble-tool" style="color: black; text-decoration: none; display: inline-block;">3DS MPO Wobble Tool</a></li>
+                    <li><a href="#" style="color: black; text-decoration: none; display: inline-block;">MPO Parser NPM Package</a></li>
+                    <li><a href="#personal-finances-ai" style="color: black; text-decoration: none; display: inline-block;">Personal Finances AI</a></li>
+                    <li><a href="#" style="color: black; text-decoration: none; display: inline-block;">Australian Open Predictor</a></li>
+                    <li><a href="#" style="color: black; text-decoration: none; display: inline-block;">Roland Garros Predictor</a></li>
+                    <li><a href="#" style="color: black; text-decoration: none; display: inline-block;">LLM Typing Test</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="display:flex; flex-direction:column; justify-content: flex-start;"> 
+        <table style="width:100%; border: 2px solid #ccc; border-collapse: collapse; table-layout: fixed; box-sizing: border-box;">
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 0.5rem 0.75rem; background: #f4f4f4; text-align: center;">
+                    <strong>Github Contribution Graph</strong>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 1rem; vertical-align: top; text-align: center; background: white;">
+                    <div id="contrib-graph" style="width:100%;"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
-
-<!-- <div style="display:grid; grid-template-columns:0.5fr 0.5fr; gap:1rem; align-items:stretch;">
-  <div style="display:flex; flex-direction:column; gap:1rem;">
-    <table style="width:100%; border: 2px solid #ccc; border-collapse: collapse; table-layout: fixed; box-sizing: border-box;">
-        <tr>
-            <td style="border: 1px solid #ccc; padding: 1rem 1.25rem; vertical-align: top; background: white;">
-                <ul style="margin: 0; padding-left: 0; list-style: none;">
-                  <li><a href="#3ds-mpo-wobble-tool" style="color: orange; text-decoration: none;">3DS MPO Wobble Tool</a></li>
-                  <li><a href="#" style="color: red; text-decoration: none;">MPO Parser NPM Package</a></li>
-                  <li><a href="#personal-finances-ai" style="color: orange; text-decoration: none;">Personal Finances AI</a></li>
-                  <li><a href="#" style="color: red; text-decoration: none;">LLM Memory Mover</a></li>
-                  <li><a href="#" style="color: red; text-decoration: none;">Australian Open Predictor</a></li>
-                  <li><a href="#" style="color: red; text-decoration: none;">Roland Garros Predictor</a></li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-
-    <table style="width:100%; border: 2px solid #ccc; border-collapse: collapse; table-layout: fixed; box-sizing: border-box;">
-        <tr>
-            <td style="border: 1px solid #ccc; padding: 0.8rem 1.25rem; background: white;">
-                <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                  <span><span style="color: red;">●</span> Not Started</span>
-                  <span><span style="color: orange;">●</span> In Progress</span>
-                  <span><span style="color:#40c463;">●</span> Completed</span>
-                </div>
-            </td>
-        </tr>
-    </table>
-  </div>
-
-  <div style="display:flex;">
-    <table style="width:100%; border: 2px solid #ccc; border-collapse: collapse; table-layout: fixed; box-sizing: border-box;">
-        <tr>
-            <td style="border: 1px solid #ccc; padding: 1rem; vertical-align: middle; text-align: center; background: white;">
-                <div id="contrib-graph" style="width:100%;"></div>
-            </td>
-        </tr>
-    </table>
-  </div>
-</div> -->
 
 <script>
 const GITHUB_TOKEN = "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";
@@ -204,7 +143,6 @@ renderGraph();
 renderGraph();
 </script>
 
-<br>
 <br>
 
 <!-- <hr style="border:none; border-top:1px solid #e0e0e0; margin:0 0 3.5rem;"> -->
