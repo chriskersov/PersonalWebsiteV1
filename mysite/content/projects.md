@@ -49,7 +49,7 @@ This page showcases the personal projects I've built in my spare time. I always 
 </div>
 
 <script>
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN = "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";
 const USERNAME = "chriskersov";
 
 async function fetchContributions() {
@@ -99,7 +99,7 @@ function getColor(count) {
 
 async function renderGraph() {
   const allWeeks = await fetchContributions();
-  const weeks = allWeeks.slice(-13);
+  const weeks = allWeeks.slice(-16);
 
   const container = document.getElementById("contrib-graph");
   
@@ -138,8 +138,6 @@ async function renderGraph() {
   container.appendChild(svg);
 }
 
-renderGraph();  
-
 renderGraph();
 </script>
 
@@ -177,7 +175,7 @@ renderGraph();
       <span style="color:white;">7 photos</span>
     </div>
   </div>
-  <div onclick="openLightbox(0)" style="cursor:pointer; text-align:center; padding:0.4rem 0; color:black; border-top:1px solid #ccc;"><strong>View Gallery</strong></div>
+  <div onclick="openLightbox(0)" style="cursor:pointer; text-align:center; padding:0.4rem 0; color:black; background:#f4f4f4; border-top:1px solid #ccc;"><strong>View Gallery</strong></div>
 </div>
 </div>
 
@@ -185,14 +183,14 @@ renderGraph();
 
 <table style="width:100%; border: 2px solid #ccc; border-collapse: collapse; table-layout: fixed; box-sizing: border-box;">
     <tr>
-        <td style="width:33%; border: 1px solid #ccc; padding: 0.5rem 0.75rem; vertical-align: top; text-align: center;">
+        <td style="width:33%; border: 1px solid #ccc; padding: 0.5rem 0.75rem; vertical-align: top; text-align: center; background: #f4f4f4;">
             <strong>README.md</strong>
         </td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ccc; padding: 0.5rem 0.75rem; vertical-align: top;">
+        <td style="border: 1px solid #ccc; padding: 0.5rem 0.75rem; vertical-align: top; background: white;">
             <a href="https://github.com/chriskersov/3DS-wobble-gif" target="_blank"  style="color:black; text-decoration:none;">
-              <div id="readme-container" style="max-height:500px; overflow-y:scroll; scrollbar-width:none; -ms-overflow-style:none; background:#ededed; padding:1rem 1.25rem; margin-top:0.5rem; box-sizing:border-box; width:100%;">
+              <div id="readme-container" style="max-height:500px; overflow-y:scroll; scrollbar-width:none; -ms-overflow-style:none; padding:1rem 1.25rem; margin-top:0.5rem; box-sizing:border-box; width:100%;">
                 <div id="readme-content" style="font-family:monospace; color:black; margin:0; word-break:break-word;">Loading README...</div>
               </div>
             </a>
@@ -328,21 +326,21 @@ fetch(REPO_RAW_BASE + "README.md")
       <span style="color:white;">1 photo</span>
     </div>
   </div>
-  <div onclick="openLightbox2(0)" style="cursor:pointer; text-align:center; padding:0.4rem 0; color:black; border-top:1px solid #ccc;"><strong>View Gallery</strong></div>
+  <div onclick="openLightbox2(0)" style="cursor:pointer; text-align:center; padding:0.4rem 0; color:black; background:#f4f4f4; border-top:1px solid #ccc;"><strong>View Gallery</strong></div>
 </div>
  
 </div>
  
 <table style="width:100%; border: 2px solid #ccc; border-collapse: collapse; table-layout: fixed; box-sizing: border-box;">
     <tr>
-        <td style="width:33%; border: 1px solid #ccc; padding: 0.5rem 0.75rem; vertical-align: top; text-align: center;">
+        <td style="width:33%; border: 1px solid #ccc; padding: 0.5rem 0.75rem; vertical-align: top; text-align: center; background: #f4f4f4;">
             <strong>README.md</strong>
         </td>
     </tr>
     <tr>
-        <td style="border: 1px solid #ccc; padding: 0.5rem 0.75rem; vertical-align: top;">
+        <td style="border: 1px solid #ccc; padding: 0.5rem 0.75rem; vertical-align: top; background: white;">
             <a href="https://github.com/chriskersov/personal-finances-ai" target="_blank" style="color:black; text-decoration:none;">
-              <div id="readme-container-2" style="max-height:500px; overflow-y:scroll; scrollbar-width:none; -ms-overflow-style:none; background:#ededed; padding:1rem 1.25rem; margin-top:0.5rem; box-sizing:border-box; width:100%;">
+              <div id="readme-container-2" style="max-height:500px; overflow-y:scroll; scrollbar-width:none; -ms-overflow-style:none; padding:1rem 1.25rem; margin-top:0.5rem; box-sizing:border-box; width:100%;">
                 <div id="readme-content-2" style="font-family:monospace; color:black; margin:0; word-break:break-word;">Loading README...</div>
               </div>
             </a>
