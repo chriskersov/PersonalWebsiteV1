@@ -49,37 +49,8 @@ This page showcases the personal projects I've built in my spare time. I always 
 </div>
 
 <script>
-const GITHUB_TOKEN = "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";
 const USERNAME = "chriskersov";
-
-async function fetchContributions() {
-  const query = `{
-    user(login: "${USERNAME}") {
-      contributionsCollection {
-        contributionCalendar {
-          weeks {
-            contributionDays {
-              contributionCount
-              date
-            }
-          }
-        }
-      }
-    }
-  }`;
-
-  const res = await fetch("https://api.github.com/graphql", {
-    method: "POST",
-    headers: {
-      "Authorization": `bearer ${GITHUB_TOKEN}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ query })
-  });
-
-  const data = await res.json();
-  return data.data.user.contributionsCollection.contributionCalendar.weeks;
-}
+const CONTRIBUTION_WEEKS = {{< github_contrib_weeks username="chriskersov" >}};
 
 function getColor(count) {
   if (count === 0) return "#e8e8e8";
@@ -97,8 +68,8 @@ function getColor(count) {
   return "#216e39";                // GitHub Deepest Green
 }
 
-async function renderGraph() {
-  const allWeeks = await fetchContributions();
+function renderGraph() {
+  const allWeeks = CONTRIBUTION_WEEKS;
   const weeks = allWeeks.slice(-16);
 
   const container = document.getElementById("contrib-graph");
