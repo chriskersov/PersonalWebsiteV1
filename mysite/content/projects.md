@@ -160,11 +160,14 @@ renderGraph();
     </tr>
     <tr>
         <td style="border: 1px solid #ccc; padding: 0.5rem 0.75rem; vertical-align: top; background: white;">
-            <a href="https://github.com/chriskersov/3DS-wobble-gif" target="_blank"  style="color:black; text-decoration:none;">
-              <div id="readme-container" style="max-height:500px; overflow-y:scroll; scrollbar-width:none; -ms-overflow-style:none; padding:1rem 1.25rem; margin-top:0.5rem; box-sizing:border-box; width:100%;">
-                <div id="readme-content" style="font-family:monospace; color:black; margin:0; word-break:break-word;">Loading README...</div>
-              </div>
-            </a>
+            <details class="readme-expander">
+              <summary><span class="arrow">▸</span><span class="open-arrow">▾</span> Toggle preview</summary>
+              <a href="https://github.com/chriskersov/3DS-wobble-gif" target="_blank" style="color:black; text-decoration:none; display:block; margin-top:0.5rem;">
+                <div id="readme-container" style="max-height:500px; overflow-y:scroll; scrollbar-width:none; -ms-overflow-style:none; padding:1rem 1.25rem; box-sizing:border-box; width:100%;">
+                  <div id="readme-content" style="font-family:monospace; color:black; margin:0; word-break:break-word;">Loading README...</div>
+                </div>
+              </a>
+            </details>
         </td>
     </tr>
 </table>
@@ -180,11 +183,50 @@ renderGraph();
 </div>
 
 <style>
-  details[open] summary .arrow { display: none; }
-  details:not([open]) summary .open-arrow { display: none; }
-  /* details[open] #readme-container { max-height:none; } */
+  details.readme-expander {
+    margin: 0;
+  }
+
+  details.readme-expander > summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    user-select: none;
+    font-weight: 400;
+    color: #888;
+    text-align: center;
+    width: 100%;
+  }
+
+  details.readme-expander > summary .arrow,
+  details.readme-expander > summary .open-arrow {
+    color: #888;
+  }
+
+  details.readme-expander[open] > summary .arrow {
+    display: none;
+  }
+
+  details.readme-expander:not([open]) > summary .open-arrow {
+    display: none;
+  }
+
+  details.readme-expander > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details.readme-expander > summary::marker {
+    content: "";
+  }
 
   #readme-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  #readme-container-2::-webkit-scrollbar {
     display: none;
   }
 </style>
@@ -310,11 +352,14 @@ fetch(REPO_RAW_BASE + "README.md")
     </tr>
     <tr>
         <td style="border: 1px solid #ccc; padding: 0.5rem 0.75rem; vertical-align: top; background: white;">
-            <a href="https://github.com/chriskersov/personal-finances-ai" target="_blank" style="color:black; text-decoration:none;">
-              <div id="readme-container-2" style="max-height:500px; overflow-y:scroll; scrollbar-width:none; -ms-overflow-style:none; padding:1rem 1.25rem; margin-top:0.5rem; box-sizing:border-box; width:100%;">
-                <div id="readme-content-2" style="font-family:monospace; color:black; margin:0; word-break:break-word;">Loading README...</div>
-              </div>
-            </a>
+            <details class="readme-expander">
+              <summary><span class="arrow">▸</span><span class="open-arrow">▾</span> Toggle preview</summary>
+              <a href="https://github.com/chriskersov/personal-finances-ai" target="_blank" style="color:black; text-decoration:none; display:block; margin-top:0.5rem;">
+                <div id="readme-container-2" style="max-height:500px; overflow-y:scroll; scrollbar-width:none; -ms-overflow-style:none; padding:1rem 1.25rem; box-sizing:border-box; width:100%;">
+                  <div id="readme-content-2" style="font-family:monospace; color:black; margin:0; word-break:break-word;">Loading README...</div>
+                </div>
+              </a>
+            </details>
         </td>
     </tr>
 </table>

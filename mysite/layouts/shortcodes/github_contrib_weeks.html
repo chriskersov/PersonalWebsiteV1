@@ -6,14 +6,18 @@
     {{- $headers = merge $headers (dict "Authorization" (printf "bearer %s" $token)) -}}
 {{- end -}}
 
+{{/* Construct the GraphQL Query */}}
 {{- $q1 := printf "query { user(login: %q) {" $username -}}
 {{- $q2 := " contributionsCollection { contributionCalendar {" -}}
 {{- $q3 := " weeks { contributionDays { contributionCount date } } } } } }" -}}
+{{- $query := printf "%s%s%s" $q1 $q2 $q3 -}}
 
-{{- $body := dict "query" (printf "%s%s%s" $q1 $q2 $q3) | jsonify -}}
-{{- $opts := dict "method" "post" "body" $body "headers" $headers -}}
+{{/* Set up Request Options */}}
+{{- $body := dict "query" $query | jsonify -}}
+{{- $opts := dict "method" "post" "body" $body "headers" $headers "cacheControl" "no-cache" -}}
 {{- $weeks := slice -}}
 
+{{/* Fetch Data from GitHub API */}}
 {{- with try (resources.GetRemote "https://api.github.com/graphql" $opts) -}}
     {{- with .Value -}}
         {{- $payload := . | transform.Unmarshal -}}
@@ -23,4 +27,5 @@
     {{- end -}}
 {{- end -}}
 
+{{/* Output the Result as JSON */}}
 {{- $weeks | jsonify -}}
