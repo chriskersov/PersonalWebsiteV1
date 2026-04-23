@@ -79,6 +79,8 @@ function getTargetY(d) {
 }
 
 const simulation = d3.forceSimulation(data.nodes)
+  .alpha(0.55) // Start with less energy so initial motion is calmer
+  .velocityDecay(0.58) // More damping slows node movement between ticks
   .force("link", d3.forceLink(data.links).id(d => d.id).distance(140))
   .force("charge", d3.forceManyBody().strength(-420)) // Stronger repulsion for even spread
   .force("x", d3.forceX(d => getTargetX(d)).strength(0.14))
@@ -137,7 +139,7 @@ simulation.on("tick", () => {
 });
 
 function dragstarted(event) {
-  if (!event.active) simulation.alphaTarget(0.3).restart();
+  if (!event.active) simulation.alphaTarget(0.16).restart();
   event.subject.fx = event.subject.x;
   event.subject.fy = event.subject.y;
 }
@@ -156,7 +158,7 @@ window.addEventListener('resize', () => {
     height = container.clientHeight;
 
     simulation.force("center", d3.forceCenter(width / 2, height / 2));
-    simulation.alpha(0.3).restart();
+  simulation.alpha(0.16).restart();
 });
 </script>
 
@@ -285,7 +287,9 @@ window.addEventListener('resize', () => {
   <div id="philosophy" style="border: 2px solid #ccc; background: #f4f4f4; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem;">
     <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem;">Philosophy</div>
     <div style="line-height: 1.7; color: #444;">
-      I like the idea of building a life around curiosity, consistency, and useful output — learning a lot, making things that help people, and leaving room to enjoy the process too.
+    <br>
+    My everyday actions are what make me who I am. Results are just the side effects of what I do.<br><br>You do it right. And do it every day.<br><br>
+    Doing stuff right just feels good. Repitition. Consistency. Care.
     </div>
   </div>
 </div>
