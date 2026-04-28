@@ -15,6 +15,31 @@ My experience spans both industry and customer-facing environments, giving me a 
 
 <br>
 
+<br>
+
+<table style="width:100%; border:2px solid #ccc; border-collapse:collapse; text-align:center; table-layout:fixed;">
+  <tr>
+    <td style="width:26%; border:1px solid #ccc; padding:0.5rem 0.75rem; background:#f4f4f4;"><strong>Role</strong></td>
+    <td style="width:26%; border:1px solid #ccc; padding:0.5rem 0.75rem; background:#f4f4f4;"><strong>Company</strong></td>
+    <td style="width:28%; border:1px solid #ccc; padding:0.5rem 0.75rem; background:#f4f4f4;"><strong>Location</strong></td>
+    <td style="width:20%; border:1px solid #ccc; padding:0.5rem 0.75rem; background:#f4f4f4;"><strong>Timeframe</strong></td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ccc; padding:0.5rem 0.75rem; background:white;">Data Scientist</td>
+    <td style="border:1px solid #ccc; padding:0.5rem 0.75rem; background:white;">Shell</td>
+    <td style="border:1px solid #ccc; padding:0.5rem 0.75rem; background:white;">London</td>
+    <td style="border:1px solid #ccc; padding:0.5rem 0.75rem; background:white;">08/2025 - 09/2026</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #ccc; padding:0.5rem 0.75rem; background:white;">Retail Assistant</td>
+    <td style="border:1px solid #ccc; padding:0.5rem 0.75rem; background:white;">Screwfix</td>
+    <td style="border:1px solid #ccc; padding:0.5rem 0.75rem; background:white;">Gerrards Cross, Hayes, Bath</td>
+    <td style="border:1px solid #ccc; padding:0.5rem 0.75rem; background:white;">08/2021 - 05/2025</td>
+  </tr>
+</table>
+
+<br>
+
 ## Data Scientist&nbsp;-----&nbsp;Shell
 
 ### 08/2025 - 09/2026&nbsp;-----&nbsp;London
@@ -22,7 +47,7 @@ My experience spans both industry and customer-facing environments, giving me a 
 <p>My placement year as a Data Scientist within Shell's E-Mobility team in central London was an incredibly varied and rewarding experience, spanning data analysis, machine learning, and software engineering to support both research and development and strategic business decisions.</p>
 
 <details>
-  <summary style="cursor:pointer;"><strong><span class="more-label">More info</span><span class="less-label">Less info</span></strong></summary>
+  <summary style="cursor:pointer;"><span class="more-label">More info</span><span class="less-label">Less info</span></summary>
 
 <br>
 
@@ -81,14 +106,14 @@ My experience spans both industry and customer-facing environments, giving me a 
 
 <br>
 
-## Screwfix&nbsp;-----&nbsp;Retail Assistant
+## Retail Assistant&nbsp;-----&nbsp;Screwfix
 
 ### 08/2021 - 05/2025&nbsp;-----&nbsp;Gerrards Cross, Hayes, Bath
 
 My experience at Screwfix across three locations over nearly four years built the interpersonal and operational skills that underpin everything else I do. Working in a fast-paced retail environment taught me how to communicate clearly, perform under pressure, and work as part of a team - qualities I continue to draw on in technical settings.
 
 <details>
-  <summary style="cursor:pointer;"><strong><span class="more-label">More info</span><span class="less-label">Less info</span></strong></summary>
+  <summary style="cursor:pointer;"><span class="more-label">More info</span><span class="less-label">Less info</span></summary>
 
 <br>
 
@@ -111,6 +136,22 @@ My experience at Screwfix across three locations over nearly four years built th
 </details>
 
 <style>
+  details > summary {
+    color: #000;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  details > summary::marker {
+    color: #000;
+    font-size: 0.85rem;
+  }
+
+  details > summary::-webkit-details-marker {
+    color: #000;
+    font-size: 0.85rem;
+  }
+
   details summary .less-label { display: none; }
   details[open] summary .more-label { display: none; }
   details[open] summary .less-label { display: inline; }
