@@ -82,16 +82,26 @@
 <div class="profile-container" id="profileContainer">
   <canvas id="depthCanvas"></canvas>
 </div>
-<h1 style="font-size:3.5rem; margin:0 0 -0.2em;">Chris Kersov</h1>
-<div style="margin-bottom:2.05em; color: #000000">
-  /kr<span style="font-size: 0.95em; font-weight:100; font-variation-settings: 'wght' 50; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;">ɪ</span>s ˈk<span style="font-size: 0.95em; font-weight:100; font-variation-settings: 'wght' 50; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;">ɛə</span>rs<span style="font-size: 0.95em; font-weight:100; font-variation-settings: 'wght' 50; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;">ɒ</span>v/
-  <button class="pronounce-btn" id="pronounce-button" aria-label="Play pronunciation of Chris Kersov" title="Play pronunciation of Chris Kersov" onclick="pronounceName()">
+<div style="margin:0 0 0em;">
+  <h1 style="font-size:3.5rem; margin:0;">Chris Kersov</h1>
+    <a href="/images/ChristopherKersovCV_UpReach%20(1).pdf" download aria-label="Download CV" title="Download CV" style="display:inline-flex; align-items:center; gap:0.55rem; margin-top:0.6rem; padding:0.45rem 0.75rem; border:2px solid #ccc; border-radius:0; background:#f4f4f4; color:#000; text-decoration:none; box-sizing:border-box; width:fit-content;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="width:1.05rem; height:1.05rem; color:#000; flex:none;">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+      <path d="M7 10l5 5 5-5"/>
+      <path d="M12 15V3"/>
+    </svg>
+    <span style="font-size:0.95rem; line-height:1;">Download CV</span>
+  </a>
+</div>
+<!-- <div style="margin-bottom:2.05em; color: #000000">
+  /kr<span style="font-size: 0.95em; font-weight:100; font-variation-settings: 'wght' 50; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;">ɪ</span>s ˈk<span style="font-size: 0.95em; font-weight:100; font-variation-settings: 'wght' 50; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;">ɛə</span>rs<span style="font-size: 0.95em; font-weight:100; font-variation-settings: 'wght' 50; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;">ɒ</span>v/ -->
+  <!-- <button class="pronounce-btn" id="pronounce-button" aria-label="Play pronunciation of Chris Kersov" title="Play pronunciation of Chris Kersov" onclick="pronounceName()">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
       <path d="M11 5L6 9H2v6h4l5 4V5z"/>
       <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
     </svg>
-  </button>
-<p><audio id="pronounce-audio" src="Chris Kersov pronunciation.MP3" preload="none"></audio></p>
+  </button> -->
+<!-- <audio id="pronounce-audio" src="Chris Kersov pronunciation.MP3" preload="none"></audio> -->
 </div>
 <script>
 function pronounceName() {
@@ -208,7 +218,7 @@ function render() {
 <div style="text-align:justify; text-justify:inter-word;">
 I am in my third year studying Computer Science and Artificial Intelligence, maintaining a first‑class honours, and currently on a placement year at Shell in Central London. I am gaining invaluable industry experience in data science while pursuing my passion for leveraging technology to solve complex business problems.
 <p>Following my placement, I look forward to applying these industry insights to my final year and my dissertation. I am excited to return to an academic environment where I can continue tackling challenging, high-level topics. Looking further ahead, I am eager to pursue graduate opportunities for 2027, where I can continue delivering impact through data-driven innovation.</p>
-<p>I am currently working on a predictive model for the 2026 Australian Open using historical ATP match data. I am experimenting with XGBoost and a deep neural network implementation, with plans to validate performance during the live tournament. This project combines my love for playing and watching tennis with a genuine interest in machine learning. I have wanted to build something like this for quite a while, and I am excited to see how the model evolves as I refine it across all the upcoming Slams. <span style="color: red"> [Github link or link to the specific part in projects page] </span></p>
+<p>I&rsquo;m passionate about building personal projects that combine my interests with technical skills. I&rsquo;ve developed tools like a <a href="/projects/#3ds-mpo-wobble-tool" style="color:black; text-decoration:underline;">3DS MPO Wobble Tool</a> that converts stereo images into animated GIFs, and <a href="/projects/#personal-finances-ai" style="color:black; text-decoration:underline;">Personal Finances AI</a>, a Streamlit app that uses a locally-running LLM to generate monthly financial summaries from an Excel workbook. Check out my <a href="/projects/" style="color:black; text-decoration:underline;">projects page</a> for more details on everything I&rsquo;m working on.</p>
 <p>This website explores various aspects of my life, from professional work and education to personal hobbies and interests, such as tennis, table tennis, speedsolving Rubik&rsquo;s cubes, and travelling. If you would like to get in touch, please feel free to message me on <a href="https://www.linkedin.com/in/chriskersov" target="_blank" style="color:black; text-decoration:underline;">LinkedIn</a> or send me an <button id="copyEmailBtn" aria-label="Copy email address" title="Copy email address" style="background:none;border:0;padding:0; color:black;text-decoration:underline;cursor:pointer;font:inherit;">
 email
 </button> (click to copy).
@@ -263,7 +273,7 @@ email
   <br>
   <hr/>
   
-  <a href="https://github.com/chriskersov">Github</a> | <a href="https://www.linkedin.com/in/chriskersov/">LinkedIn</a>
+  <a href="/cv/">CV</a> | <a href="https://github.com/chriskersov">Github</a> | <a href="https://www.linkedin.com/in/chriskersov/">LinkedIn</a>
   
   </footer>
   </body>
