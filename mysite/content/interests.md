@@ -172,59 +172,85 @@ window.addEventListener('resize', () => {
 
   <div id="sports" style="border: 2px solid #ccc; background: white; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem;">
     <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem;">Sports</div>
-    <div style="color: #888; margin-bottom: 1rem;">The sports I follow and play are the ones that reward repetition, technique, and small improvements over time.</div>
+    <br>
+    <!-- <div style="color: #888; margin-bottom: 1rem;">The sports I follow and play are the ones that reward repetition, technique, and small improvements over time.</div> -->
     <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
       <div style="border: 1px solid #ccc; background: #f9f9f9; padding: 1rem 1.1rem;">
         <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Tennis</div>
         <div style="line-height: 1.7; color: #444;">
-          Tennis is probably the sport I care about most. I want to write about how long I’ve played, the equipment I use, what I like about the game, and the prediction ideas I keep coming back to.
+          I have played tennis since I was 5 years old. I have always loved playing tennis. I competed regularly as a junior and have played first team for David Lloyd Northwood, Eastcote Lawn Tennis Club, and Lowlands Lawn Tennis Club. Over the past few years, I have battled through wrist and back injuries. I am still incredibly driven and motivated to keep improving in tennis, I just love it so much. 
+          what racket do i have
+          what strings do i use
+          waht tensions
+          tennis stringing mini business
         </div>
-        <div style="margin-top: 0.8rem; border: 2px dashed #ccc; background: white; padding: 1rem; color: #888; text-align: center;">
-          Image placeholder: me playing tennis
+        <div style="margin-top: 0.8rem; border: 2px dashed #ccc; background: white; padding: 1rem; color: #888; text-align: center;">Image placeholder: Me playing tennis
         </div>
       </div>
       <div style="border: 1px solid #ccc; background: #f9f9f9; padding: 1rem 1.1rem;">
         <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Table tennis</div>
         <div style="line-height: 1.7; color: #444;">
-          Fast, technical, and addictive. This section can cover how I got into it, favourite players, equipment, and the moments I’ve played at work or elsewhere.
+          Talk about how I love table tennis, play it at work, and plan to play during univeristy. world table tennis championship
         </div>
         <div style="margin-top: 0.8rem; border: 2px dashed #ccc; background: white; padding: 1rem; color: #888; text-align: center;">
-          Image placeholder: table tennis photo
+          Image placeholder: Table tennis photo
         </div>
       </div>
       <div style="border: 1px solid #ccc; background: #f9f9f9; padding: 1rem 1.1rem;">
-        <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Badminton / Padel</div>
+        <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Badminton</div>
         <div style="line-height: 1.7; color: #444;">
-          A smaller space for racket sports I want to keep playing more of. This is where I can talk about what I enjoy, where I play, and what I want to improve.
+        Really enjoy playing badminton, super fast paced. what racket and strings do i have at what tensions. 
         </div>
         <div style="margin-top: 0.8rem; border: 2px dashed #ccc; background: white; padding: 1rem; color: #888; text-align: center;">
-          Image placeholder: badminton / padel
+          Image placeholder: Me playing badminton
         </div>
       </div>
     </div>
-
   </div>
 
-  <div id="projects-ideas" style="border: 2px solid #ccc; background: white; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem;">
-    <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem;">Projects ideas</div>
-    <div style="color: #888; margin-bottom: 1rem;">A vertical section for the ideas I keep returning to — these will eventually become fuller case studies with screenshots and demos.</div>
+  <div id="travel-photo" style="border: 2px solid #ccc; background: white; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem;">
+    <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem;">Travel and Photography</div>
+    <br>
+    <!-- <div style="color: #888; margin-bottom: 1rem;"></div> -->
     <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
       <div style="border: 1px solid #ccc; padding: 1rem 1.1rem; background: #f9f9f9;">
-        <strong>Prediction / ML projects</strong>
+        <strong>Hong Kong</strong>
         <div style="margin-top: 0.45rem; line-height: 1.7; color: #444;">
-          Grand slam predictors, football-style live match predictions, F1 ideas, weather analysis, and anything else where patterns, uncertainty, and data meet.
+          I've been to Hong Kong x amount of times. I went to here and there etc. 
+        </div>
+        <div style="margin-top: 0.8rem; border: 2px dashed #ccc; background: white; padding: 1rem; color: #888; text-align: center;">Image placeholder: Photo of Hong Kong
         </div>
       </div>
       <div style="border: 1px solid #ccc; padding: 1rem 1.1rem; background: #f9f9f9;">
-        <strong>Useful tools</strong>
+        <strong>Spain</strong>
         <div style="margin-top: 0.45rem; line-height: 1.7; color: #444;">
-          An MPO-to-image package, a typing test, a chat context mover, a pronunciation fix for my name, and other small things that solve a real annoyance.
+          I've been to Spain x amount of times. I went to here and there etc. 
+        </div>
+        <div style="margin-top: 0.8rem; border: 2px dashed #ccc; background: white; padding: 1rem; color: #888; text-align: center;">Image placeholder: Photo of Hong Kong
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tech-life" style="border: 2px solid #ccc; background: white; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem;">
+    <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem;">Tech and life</div>
+    <br>
+    <!-- <div style="color: #888; margin-bottom: 1rem;"></div> -->
+    <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
+      <div style="border: 1px solid #ccc; padding: 1rem 1.1rem; background: #f9f9f9;">
+        <strong>Hong Kong</strong>
+        <div style="margin-top: 0.45rem; line-height: 1.7; color: #444;">
+          I've been to Hong Kong x amount of times. I went to here and there etc. 
+        </div>
+        <div style="margin-top: 0.8rem; border: 2px dashed #ccc; background: white; padding: 1rem; color: #888; text-align: center;">Image placeholder: Photo of Hong Kong
         </div>
       </div>
       <div style="border: 1px solid #ccc; padding: 1rem 1.1rem; background: #f9f9f9;">
-        <strong>Presentation / online presence</strong>
+        <strong>Spain</strong>
         <div style="margin-top: 0.45rem; line-height: 1.7; color: #444;">
-          Improving my GitHub profile, writing better READMEs, exploring marketing for projects, and maybe rebuilding my CV in LaTeX or Typst.
+          I've been to Spain x amount of times. I went to here and there etc. 
+        </div>
+        <div style="margin-top: 0.8rem; border: 2px dashed #ccc; background: white; padding: 1rem; color: #888; text-align: center;">Image placeholder: Photo of Hong Kong
         </div>
       </div>
     </div>
@@ -249,39 +275,30 @@ window.addEventListener('resize', () => {
     </div>
   </div>
 
-  <div id="travel-photo" style="border: 2px solid #ccc; background: white; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem;">
-    <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem;">Travel and photography</div>
-    <div style="color: #888; margin-bottom: 1rem;">A place for photos, destinations, and the kind of moments I want to remember.</div>
+  <div id="projects-ideas" style="border: 2px solid #ccc; background: white; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem;">
+    <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem;">Project Ideas</div>
+    <br>
+    <!-- <div style="color: #888; margin-bottom: 1rem;"></div> -->
     <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
-      <div style="border: 1px solid #ccc; background: #f9f9f9; padding: 1rem 1.1rem;">
-        <div style="line-height: 1.7; color: #444;">
-          Recently I’ve started travelling more and I want this section to become a photo-led diary of places I’ve been and places I want to go.
+      <div style="border: 1px solid #ccc; padding: 1rem 1.1rem; background: #f9f9f9;">
+        <strong>Data Projects</strong>
+        <div style="margin-top: 0.45rem; line-height: 1.7; color: #444;">
+          Tennis grand slam predictors, football style live match predictions, F1 ideas, weather analysis, and anything else where patterns, uncertainty, and data meet.
         </div>
-        <div style="margin-top: 0.8rem; border: 2px dashed #ccc; background: white; padding: 1rem; color: #888; text-align: center;">
-          Image placeholder: travel / scenery photo
+      </div>
+      <div style="border: 1px solid #ccc; padding: 1rem 1.1rem; background: #f9f9f9;">
+        <strong>Useful tools</strong>
+        <div style="margin-top: 0.45rem; line-height: 1.7; color: #444;">
+          An MPO-to-image package, a typing test, a chat context mover, a pronunciation fix for my name, and other small things that solve a real annoyance.
+        </div>
+      </div>
+      <div style="border: 1px solid #ccc; padding: 1rem 1.1rem; background: #f9f9f9;">
+        <strong>Presentation / online presence</strong>
+        <div style="margin-top: 0.45rem; line-height: 1.7; color: #444;">
+          Improving my GitHub profile, writing better READMEs, exploring marketing for projects, and maybe rebuilding my CV in LaTeX or Typst.
         </div>
       </div>
     </div>
-  </div>
-
-  <div id="tech-life" style="border: 2px solid #ccc; background: white; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem;">
-    <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem;">Tech and life</div>
-    <div style="color: #888; margin-bottom: 1rem;">The everyday stuff: devices, finances, productivity, and the systems I like keeping tidy.</div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-      <div style="border: 1px solid #ccc; background: #f9f9f9; padding: 1rem 1.1rem;">
-        <strong>Tech</strong>
-        <div style="margin-top: 0.45rem; line-height: 1.7; color: #444;">
-          Keyboards, laptops, headphones, Linux ideas, and the little design details that make tools nicer to use.
-        </div>
-      </div>
-      <div style="border: 1px solid #ccc; background: #f9f9f9; padding: 1rem 1.1rem;">
-        <strong>Personal finances</strong>
-        <div style="margin-top: 0.45rem; line-height: 1.7; color: #444;">
-          Keeping track of my finances and building a better system for staying on top of everything.
-        </div>
-      </div>
-    </div>
-
   </div>
 
   <div id="philosophy" style="border: 2px solid #ccc; background: #f4f4f4; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem;">
@@ -343,26 +360,24 @@ ideas for future projects
 - i also want to have money involved
 - what about sentiment analysis
 - also what bookies
-  - haha what if you make a parlay for some likely combinations
 
-- need to fix the pronounciation of chris kersov to be able to work on all browsers
-- just make it play a stored audio
+also rewrite cv in latex or typst. can also have it previewed in one of the pages. with some annotations or something maybe idk.
 
-- have a cv download on the first page
+it could be cool to have my timezone and current time for me as well. also have the hk timezone on there.
+
+also i want to enable google analytics.
+
+when you tab and then it higlights the surrounding of links i want that to be customised. i want the scroll bar to be customised as well.
+
+perhaps on my projects page i could have a heatmap of my leetcode
+and also a heatmap of my github
+
+
+
 
 ### Sports:
 
 #### Tennis
-
-Talk about tennis history.
-How much I love it.
-How long I have been playing.
-My equipment, shoes etc.
-Predictions for next grand slam.
-ML predictor for next grand slam github link maybe.
-(I could do this for each year and then see how evolves etc).
-Racket stringing as sort of a mini business.
-IMAGE OF ME PLAYING TENNIS - NEEDS TO BE COLD.
 
 #### Table tennis
 
@@ -450,20 +465,8 @@ or my own keyboard I created (show photos - blank keycaps)
 Want to purchase and upgrade a thinkpad
 and use linux
 
-also rewrite cv in latex or typst. can also have it previewed in one of the pages. with some annotations or something maybe idk.
 
-it could be cool to have my timezone and current time for me as well. also have the hk timezone on there.
 
-i want something about my philosophy towards life as well.
-
-also i want to enable google analytics.
-
-when you tab and then it higlights the surrounding of links i want that to be customised. i want the scroll bar to be customised as well.
-
-I managed to make code blocks with syntax highlighting. I could make something cool where like it shows a block of code or like a function of sorts and then an animted output of like a cool graph or something. my github profile hahahhaha
-
-perhaps on my projects page i could have a heatmap of my leetcode
-and also a heatmap of my github
 
 ```python
 print("hello world")
@@ -480,8 +483,4 @@ $$
 $$
 
 looks like i can link to other parts just by doing this [posts](/post/) [notes](/note/). but idk what these pages are. in the template yihui mentions these 'pages not under the root directory' and shows these. so this must be something to do with the footer.
-
-i also want to improve the footer.
-
-i have realised that what i mean by footer and header are the things above and below the dotted lines. but these arent header.html and footer.html. i need to improve my understanding
 -->
