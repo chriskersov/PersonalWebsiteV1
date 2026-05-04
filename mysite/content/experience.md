@@ -10,7 +10,7 @@ title: Experience
 <br>
 
 <div>
-My experience spans both industry and customer-facing environments, giving me a well-rounded foundation in technical problem-solving and interpersonal skills. During my placement year at Shell, I worked as a Data Scientist within the E-Mobility team, applying machine learning, data analysis, and software engineering to real-world energy and transport challenges. Prior to that, my time at Screwfix developed my communication, teamwork, and ability to perform under pressure - skills that continue to complement my technical work.
+My experience spans both industry and customer-facing environments, giving me a well-rounded foundation in technical problem-solving and interpersonal skills. During my placement year at Shell, I worked as a Data Scientist within the E-Mobility team, applying machine learning, data analysis, and software engineering to real-world problems. Prior to that, my time at Screwfix developed my communication, teamwork, and ability to perform under pressure - skills that continue to complement my technical work.
 </div>
 
 <br>
