@@ -26,7 +26,7 @@ This page is a snapshot of who I am outside of work and computer science - the s
 <script>
 const data = {
     nodes: [
-    { id: "Chris", label: "Chris", size: 22, color: "#2f2f2f", textColor: "#fff", target: null },
+    { id: "Chris", label: "", size: 22, color: "#2f2f2f", textColor: "#fff", target: null },
     { id: "Tennis", label: "Tennis", size: 18, color: "#c4c4c4", textColor: "#333", target: "#sports" },
     { id: "TableTennis", label: "Table Tennis", size: 18, color: "#c4c4c4", textColor: "#333", target: "#sports" },
     { id: "Badminton", label: "Badminton", size: 18, color: "#c4c4c4", textColor: "#333", target: "#sports" },
@@ -35,7 +35,6 @@ const data = {
     { id: "Philosophy", label: "Philosophy", size: 18, color: "#c4c4c4", textColor: "#333", target: "#philosophy" },
     { id: "RubiksCubes", label: "Rubik's Cubes", size: 18, color: "#c4c4c4", textColor: "#333", target: "#rubiks-cubes" },
     { id: "Food", label: "Food", size: 18, color: "#c4c4c4", textColor: "#333", target: "#food" },
-    { id: "ProjectIdeas", label: "Project Ideas", size: 18, color: "#c4c4c4", textColor: "#333", target: "#projects-ideas" },
     { id: "Tech", label: "Tech", size: 18, color: "#c4c4c4", textColor: "#333", target: "#tech-life" }
   ],
   links: [
@@ -45,7 +44,6 @@ const data = {
     { source: "Chris", target: "Travel" },
     { source: "Chris", target: "Photography" },
     { source: "Chris", target: "Philosophy" },
-    { source: "Chris", target: "ProjectIdeas" },
     { source: "Chris", target: "Tech" },
     { source: "Chris", target: "RubiksCubes" },
     { source: "Chris", target: "Food" },
@@ -62,141 +60,113 @@ const svg = d3.select("#brain-graph");
 const container = document.getElementById('graph-container');
 let width = container.clientWidth;
 let height = container.clientHeight;
-const graphPadding = 28;
 
-// Optimized Forces for a balanced "Galaxy" look
-function getTargetX(d) {
-  if (d.id === "Chris") return width / 2;
-  if (["Tennis", "TableTennis", "Badminton"].includes(d.id)) return width * 0.22;
-  // Evenly space the travel/food/photography trio across the top
-  // Move the travel/food/photography trio to the right side (slightly left-shifted)
-  if (d.id === "Travel") return width * 0.68;
-  if (d.id === "Food") return width * 0.72;
-  if (d.id === "Photography") return width * 0.76;
-  if (["Tech"].includes(d.id)) return width * 0.5;
-  // Place Rubik's Cubes directly below the central node
-  if (d.id === "RubiksCubes") return width * 0.60;
-  // Place Philosophy centered above the central node
-  if (d.id === "Philosophy") return width / 2;
-  if (["ProjectIdeas"].includes(d.id)) return width * 0.45;
-  return width * 0.6;
+function cx() { return width / 2; }
+function cy() { return height / 2; }
+
+function targetX(d) {
+  if (d.id === "Chris") return cx();
+  if (["Tennis", "TableTennis", "Badminton"].includes(d.id)) return cx() - 180;
+  if (["Travel", "Food", "Photography"].includes(d.id)) return cx() + 180;
+  if (["Philosophy", "RubiksCubes"].includes(d.id)) return cx();
+  if (d.id === "Tech") return cx();
+  return cx();
 }
 
-function getTargetY(d) {
-  if (d.id === "Chris") return height * 0.41;
-  // Keep travel/food/photography at center like tennis trio
-  if (["Travel", "Food", "Photography"].includes(d.id)) return height / 2;
-  // Place Philosophy above and isolated
-  if (d.id === "Philosophy") return height * 0.15;
-  // Place Tech at bottom-right corner
-  if (d.id === "Tech") return height * 0.9;
-  // Place Project Ideas near the bottom
-  if (d.id === "ProjectIdeas") return height * 0.85;
-  // Rubik's Cubes below centre
-  if (d.id === "RubiksCubes") return height * 0.75;
-  return height / 2;
-}
-
-function clampNodePosition(node) {
-  const padding = Math.max(graphPadding, node.size + 18);
-  node.x = Math.max(padding, Math.min(width - padding, node.x));
-  node.y = Math.max(padding, Math.min(height - padding, node.y));
+function targetY(d) {
+  if (d.id === "Chris") return cy();
+  if (d.id === "Tennis") return cy() - 80;
+  if (d.id === "TableTennis") return cy();
+  if (d.id === "Badminton") return cy() + 80;
+  if (d.id === "Travel") return cy() - 80;
+  if (d.id === "Food") return cy();
+  if (d.id === "Photography") return cy() + 80;
+  if (d.id === "Philosophy") return cy() - 120;
+  if (d.id === "RubiksCubes") return cy() - 70;
+  if (d.id === "Tech") return cy() + 90;
+  return cy();
 }
 
 const simulation = d3.forceSimulation(data.nodes)
-  .alpha(0.55) // Start with less energy so initial motion is calmer
-  .velocityDecay(0.58) // More damping slows node movement between ticks
-  .force("link", d3.forceLink(data.links).id(d => d.id).distance(d => {
-    if (d.source.id === "Chris" && d.target.id === "ProjectIdeas" || d.source.id === "ProjectIdeas" && d.target.id === "Chris") {
-      return 100;
-    }
-    if (d.source.id === "Chris" && d.target.id === "Philosophy" || d.source.id === "Philosophy" && d.target.id === "Chris") {
-      return 130;
-    }
-    return 140;
-  }))
-  .force("charge", d3.forceManyBody().strength(-420)) // Stronger repulsion for even spread
-  .force("x", d3.forceX(d => getTargetX(d)).strength(0.14))
-  .force("y", d3.forceY(d => getTargetY(d)).strength(0.22))
-    .force("center", d3.forceCenter(width / 2, height / 2))
-  .force("collide", d3.forceCollide().radius(40)); // Keeps nodes from overlapping
+  .force("link", d3.forceLink(data.links).id(d => d.id).distance(120))
+  .force("charge", d3.forceManyBody().strength(-300))
+  .force("x", d3.forceX(d => targetX(d)).strength(0.08))
+  .force("y", d3.forceY(d => targetY(d)).strength(0.08))
+  .force("collide", d3.forceCollide().radius(d => d.size + 18))
+  .alphaDecay(0.02)
+  .velocityDecay(0.5);
 
 const link = svg.append("g")
-    .selectAll("line")
-    .data(data.links)
-    .join("line")
-    .attr("stroke", "#eee")
-    .attr("stroke-width", 1.5);
+  .selectAll("line")
+  .data(data.links)
+  .join("line")
+  .attr("stroke", "#eee")
+  .attr("stroke-width", 1.5);
 
 const node = svg.append("g")
-    .selectAll("g")
-    .data(data.nodes)
-    .join("g")
-    .attr("cursor", "pointer")
-    .on("click", (event, d) => {
-        if (d.target) {
-            const el = document.querySelector(d.target);
-            if(el) el.scrollIntoView({ behavior: 'smooth' });
-        }
+  .selectAll("g")
+  .data(data.nodes)
+  .join("g")
+  .attr("cursor", "grab")
+  .on("click", (event, d) => {
+    if (d.target) {
+      const el = document.querySelector(d.target);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  })
+  .call(d3.drag()
+    .on("start", function(event, d) {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+      d3.select(this).attr("cursor", "grabbing");
     })
-    .call(d3.drag()
-        .on("start", dragstarted)
-        .on("drag", dragged)
-        .on("end", dragended));
+    .on("drag", function(event, d) {
+      d.fx = Math.max(d.size + 4, Math.min(width - d.size - 4, event.x));
+      d.fy = Math.max(d.size + 4, Math.min(height - d.size - 30, event.y));
+    })
+    .on("end", function(event, d) {
+      if (!event.active) simulation.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
+      d3.select(this).attr("cursor", "grab");
+    })
+  );
 
 node.append("circle")
-    .attr("r", d => d.size)
-    .attr("fill", d => d.color)
-    .attr("stroke", "#fff")
-    .attr("stroke-width", 2)
-    .style("filter", "drop-shadow(0 1px 2px rgba(0,0,0,0.05))");
+  .attr("r", d => d.size)
+  .attr("fill", d => d.color)
+  .attr("stroke", "#fff")
+  .attr("stroke-width", 2);
 
 node.append("text")
-    .attr("text-anchor", "middle")
-  .attr("y", d => d.size + 12)
-  .attr("dy", "0")
-    .style("font-family", "Arial, sans-serif")
-  .style("font-size", "11px") // Smaller, cleaner text
-    .style("font-weight", "500")
-    .style("fill", d => d.textColor)
-    .style("pointer-events", "none")
-  .style("dominant-baseline", "hanging")
-    .text(d => d.label);
+  .attr("text-anchor", "middle")
+  .attr("dominant-baseline", d => d.id === "Chris" ? "central" : "hanging")
+  .attr("y", d => d.id === "Chris" ? 0 : d.size + 12)
+  .style("font-family", "Arial, sans-serif")
+  .style("font-size", "11px")
+  .style("font-weight", "500")
+  .style("fill", d => d.textColor)
+  .style("pointer-events", "none")
+  .text(d => d.label);
 
 simulation.on("tick", () => {
-  data.nodes.forEach(clampNodePosition);
-    link.attr("x1", d => d.source.x)
-        .attr("y1", d => d.source.y)
-        .attr("x2", d => d.target.x)
-        .attr("y2", d => d.target.y);
-    node.attr("transform", d => `translate(${d.x},${d.y})`);
+  data.nodes.forEach(d => {
+    if (d.fx == null) {
+      d.x = Math.max(d.size + 4, Math.min(width - d.size - 4, d.x));
+      d.y = Math.max(d.size + 4, Math.min(height - d.size - 30, d.y));
+    }
+  });
+  link
+    .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+    .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+  node.attr("transform", d => `translate(${d.x},${d.y})`);
 });
 
-function dragstarted(event) {
-  if (!event.active) simulation.alphaTarget(0.16).restart();
-  event.subject.fx = event.subject.x;
-  event.subject.fy = event.subject.y;
-}
-function dragged(event) {
-  event.subject.fx = event.x;
-  event.subject.fy = event.y;
-  clampNodePosition(event.subject);
-  event.subject.fx = event.subject.x;
-  event.subject.fy = event.subject.y;
-}
-function dragended(event) {
-  if (!event.active) simulation.alphaTarget(0);
-  event.subject.fx = null;
-  event.subject.fy = null;
-}
-
 window.addEventListener('resize', () => {
-    width = container.clientWidth;
-    height = container.clientHeight;
-
-    simulation.force("center", d3.forceCenter(width / 2, height / 2));
-    data.nodes.forEach(clampNodePosition);
-  simulation.alpha(0.16).restart();
+  width = container.clientWidth;
+  height = container.clientHeight;
+  simulation.alpha(0.3).restart();
 });
 </script>
 
@@ -279,7 +249,7 @@ window.addEventListener('resize', () => {
       <div style="border: 1px solid #ccc; padding: 1rem 1.1rem; background: #f9f9f9;">
         <strong>Spain</strong>
         <div style="margin-top: 0.45rem; line-height: 1.7; color: #444;">
-          I've been to Spain once; I went to Barcelona and Blanes. I was completely mesmerised by La Sagrada Familia.
+          I've been to Spain once; I went to Barcelona. I was completely mesmerised by La Sagrada Familia.
         </div>
         <div style="margin-top: 0.8rem; display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:0.6rem; background: #f9f9f9; padding: 0.6rem;">
           <img src="spain_image_1.jpg" alt="Spain 1" style="width:100%; height:auto; border:1px solid #e6e6e6; box-sizing:border-box; display:block;" />
@@ -422,48 +392,6 @@ window.addEventListener('resize', () => {
     </div>
   </div>
 
-  <!-- <div id="learning" style="border: 2px solid #ccc; background: white; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem;">
-    <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem;">Learning</div>
-    <div style="color: #888; margin-bottom: 1rem;">Things I’m actively learning or want to learn more deeply over time.</div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-      <div style="border: 1px solid #ccc; background: #f9f9f9; padding: 1rem 1.1rem;">
-        <strong>Mandarin</strong>
-        <div style="margin-top: 0.45rem; line-height: 1.7; color: #444;">
-          Why I started, how far I’ve got, and what I want to reach next.
-        </div>
-      </div>
-      <div style="border: 1px solid #ccc; background: #f9f9f9; padding: 1rem 1.1rem;">
-        <strong>Reading and courses</strong>
-        <div style="margin-top: 0.45rem; line-height: 1.7; color: #444;">
-          Books, papers, courses, and whatever I’m currently learning in my spare time.
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <div id="projects-ideas" style="border: 2px solid #ccc; background: white; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem;">
-    <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem;">Project Ideas</div>
-    <br>
-    <!-- <div style="color: #888; margin-bottom: 1rem;"></div> -->
-    <div style="border: 1px solid #ccc; padding: 1rem 1.1rem; background: #f9f9f9; line-height: 1.8; color: #444; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem 1.5rem;">
-      <div>
-        Tennis Grand Slam Predictors<br>
-        Football-Style Live Match Predictions<br>
-        F1 Ideas<br>
-        Weather Analysis<br>
-        An MPO-to-Image Package<br>
-        A Typing Test
-      </div>
-      <div>
-        A Chat Context Mover<br>
-        Improving My GitHub Profile<br>
-        Exploring Marketing for Projects<br>
-        Rebuilding My CV in LaTeX or Typst<br>
-        Quant-Related Projects
-      </div>
-    </div>
-  </div>
-
   <div id="philosophy" style="border: 2px solid #ccc; background: white; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem;">
     <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem;">Philosophy</div>
     <div style="margin-top: 0.6rem;">
@@ -473,77 +401,3 @@ window.addEventListener('resize', () => {
     </div>
   </div>
 </div>
-
-<!--
-Archived original notes for later expansion:
-
-ideas for future projects
-
-- UK weather analysis
-
-- create an npm package that converts mpo file to two jpegs
-
-- aus open predictor
-- roland garros predictor (so many further things that can be built on top of this)
-- world cup predictor
-- premier league predictor
-
-- an f1 related project
-
-- llm free tier memory mover
-
-- terminal typing test with basic customisability that dies when you make a mistake
-- but has better versions as well
-- and also gives in depth analsis as to waht you did while typing
-
-- quant finance related projects
-- something that could be useful for my final year project
-- with some machine learning could be cool
-
-- make my github profile look pretty
-
-- make a readme for my github main page
-
-- look into how best to market projects to get users. like for the 3ds one for example.
-
-- a project that takes your current chat lets say you reached your limit then converts it to some format. then you take that to a new free ai tier then upload it there and boom its caught up and dont need to worry about the context window. what format to convert it to and how i am not sure. binary, tokens, idk. also how can you export a whole chat. im sure thats possible. but yeah this should be a useable tool maybe even a chrome extension or something.
-
-- just had an idea to evolve the ML grand slam predictor further
-- i want to have live match prediction kinda like google and football
-- use this video to learn how to do this ml stuff by looking a match:
-  - https://www.youtube.com/watch?v=L23oIHZE14w
-- just cool to be able to learn and play with this stuff anyways
-- but perhaps the ml predictor could make a prediction
-  - then after the match is over watch the match back and improve its prediction or something
-- idk im not exactly sure yet but there is something cool that can be done here i know there is
-
-- i want to do the ml predictor for mens and woman
-- perhaps for aus open i can do for mens only
-- then for roland garros i can do for woman as well
-- i also want to have money involved
-- what about sentiment analysis
-- also what bookies
-
-also rewrite cv in latex or typst. can also have it previewed in one of the pages. with some annotations or something maybe idk.
-
-it could be cool to have my timezone and current time for me as well. also have the hk timezone on there.
-
-also i want to enable google analytics.
-
-when you tab and then it higlights the surrounding of links i want that to be customised. i want the scroll bar to be customised as well.
-
-perhaps on my projects page i could have a heatmap of my leetcode
-and also a heatmap of my github
-
-
-
-
-
-#### Padel
-
-### Interests:
-
-#### Rubik's Cubes:
-
-Solving Rubik's cubes of various shapes and sizes:
-2x2, 3x3, 4x4, 5x5, pyraminx, megaminx.
